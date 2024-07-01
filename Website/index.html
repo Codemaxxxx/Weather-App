@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card">
+        <input type="text" id="zip" placeholder="enter your zip code">
+        <textarea name="user-response" id="user-response" placeholder="How do you feel?" cols="1" rows="1"></textarea>
+        <button class="card-button" id="generate">Generate</button>
+    </div>
+    <div class="weather-output weather-hide">
+
+        <h2 class="myCity" id="myCity"></h2>
+        <p class="date" id="date"></p>
+        <p class="temp" id="temp"></p>
+        <img src="./images/fog.png" alt="">
+        <p class="feelings" id="feelings"></p>
+        <p class="weather" id="weather"></p>
+    </div>
+    <div class="error">
+        <p class="message" id="message"></p>
+    </div>
+
+
+    
+    <script src="./app.js"></script>
+</body>
+</html>

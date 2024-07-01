@@ -1,0 +1,171 @@
+:root {
+    --clr-background: hsl(222, 43%, 10%);
+    --clr-cityLabel: hsl(0, 0%, 72%);
+    --clr-backgroundText: hsl(210, 40%, 98%);
+    --clr-feeling: hsl(216, 10%, 72%);
+    --clr-response: hsl(204, 63%, 17%);
+    --clr-gradient-1: hsl(214, 10%, 33%);
+    --clr-gradient-2: hsl(313, 58%, 34%);
+    --clr-btn: hsl(64, 53%, 37%);
+}
+
+
+/* resets */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+* {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--clr-background);
+    color: var(--clr-backgroundText);
+}
+
+
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 550px;
+    background: linear-gradient(1500deg, var(--clr-gradient-1), var(--clr-gradient-2));
+    margin: 100px auto 0;
+    border-radius: 60px;
+    padding: 90px 40px;
+    text-align: center;
+}
+
+input  {
+    border: 0;
+    outline: 0;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    margin-right: 16px;
+    background: var(--clr-cityLabel);
+}
+
+textarea {
+    margin-top: 20px;
+    border: 0;
+    outline: 0;
+    padding: 18px 25px;
+    height: 60px;
+    border-radius: 30px;
+    margin-right: 110px;
+    background: var(--clr-cityLabel);
+    
+}
+
+.card-button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    border: 0;
+    outline: 0;
+    background-color: var(--clr-btn);
+    border-radius: 40px;
+    width: 100px;
+    margin: auto;
+    padding: 15px 2px;
+    margin-top: 6.5em;
+    cursor: pointer;
+    color: var(--clr-backgroundText);
+}
+
+.weather-output {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    width: 90%;
+    border-radius: 5px;
+    background: var(--clr-response);
+    margin: 60px auto 0;
+    padding: 40px 40px;
+    text-align: center;
+    
+}
+
+.weather-output {
+    opacity: 0;
+    -webkit-transition: opacity 3s linear;
+    transition: opacity 3s linear;
+};
+
+.weather-hide {
+    display: none;
+    opacity: 0;
+    -webkit-transition: opacity 2s ease-in-out;
+    transition: opacity 2s ease-in-out;
+}
+
+img {
+    width: 2em;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    font-style: italic;
+
+}
+
+/* Media Queries */
+
+@media (min-width: 341px) {
+    .card-button {
+        margin-left: 10em;
+    }
+}
+
+@media (min-width: 389px) {
+    .card-button {
+        margin-left: 15em;
+    }
+}
+
+@media (min-width: 463px) and (max-width:545px){
+    .card-button {
+        margin-left: 22em;
+    }
+}
+
+@media (min-width: 547px) and (max-width: 557px) {
+    .card-button {
+        margin-left: 26em;
+    }
+}
+
+@media (min-width: 558px) and (max-width: 667px) {
+    .card-button {
+        margin-left: 29em;
+    }
+}
+
+@media (min-width: 668px) {
+    .card-button {
+        margin-left: 30em;
+    }
+}
+
